@@ -74,6 +74,7 @@ ul {
   text-decoration: none;
   padding: 32px 0px;
   position: relative;
+  display: block;
 }
 
 .header-nav .link::after {
@@ -108,6 +109,7 @@ ul {
   letter-spacing: 0.02em;
   padding: 32px 0px;
   text-decoration: none;
+  display: block;
 }
 .header-nav-contacts .item {
   margin-right: 50px;
@@ -228,7 +230,7 @@ ul {
 
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  padding: 200px 215px;
+  padding: 200px 0px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -311,13 +313,13 @@ ul {
   border-radius: 4px;
   width: 270px;
   height: 120px;
-  padding: 25px 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*Секция  занятий */
 .section-occupation {
   padding-bottom: 94px;
-  padding-right: 215px;
-  padding-left: 215px;
 }
 .occupation-title {
   font-size: 36px;
@@ -364,8 +366,6 @@ ul {
   padding-top: 94px;
   background: #f5f4fa;
   padding-bottom: 94px;
-  padding-right: 215px;
-  padding-left: 215px;
 }
 .team-title {
   text-align: center;
