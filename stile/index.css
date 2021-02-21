@@ -36,7 +36,7 @@ p {
   text-decoration: none;
   color: var(--nav-color);
   margin-right: 93px;
-  padding: 32px 0px;
+  padding: 24px 0px;
 }
 .list {
   list-style: none;
@@ -48,7 +48,6 @@ ul {
 }
 .header {
   border: 1px solid #ececec;
-  height: 90px;
 }
 .header-logo-span {
   color: var(--primary-color);
@@ -401,6 +400,7 @@ ul {
 }
 .name-container {
   padding-top: 30px;
+  background-color: var(--white);
 }
 .team-job {
   font-size: 16px;
