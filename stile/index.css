@@ -169,8 +169,23 @@ ul {
   display: inline-block;
   width: 16px;
   height: 12px;
-  fill: var(--nav-color);
+  fill: var(--no-primary-color);
   margin-right: 10px;
+}
+.letter-icon:hover,
+.letter-icon:focus {
+  fill: var(--nav-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-nav-contacts .link:hover .letter-icon {
+  fill: var(--nav-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .telephone-icon {
   display: inline-block;
@@ -206,23 +221,11 @@ ul {
 .header-nav .link {
   position: relative;
 }
-.header-finger-svg {
-  width: 13px;
-  height: 16px;
-  position: absolute;
-  top: 57px;
-  left: 635px;
-}
+
 .header-nav-contacts .link {
   position: relative;
 }
-.header-finger-svg-emeil {
-  width: 13px;
-  height: 16px;
-  position: absolute;
-  top: 57px;
-  right: 655px;
-}
+
 /* Стили героя*/
 .section-hero {
   background-color: var(--background);
