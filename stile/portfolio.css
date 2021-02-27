@@ -60,9 +60,13 @@ ul {
   display: flex;
   align-items: center;
 }
-.header .header-nav {
+.header-nav {
   display: flex;
   margin-left: 93px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-contacts {
   display: flex;
@@ -96,6 +100,19 @@ ul {
 .header-nav .link:hover::after {
   width: 100%;
 }
+.header-nav .hover-item::after {
+  content: "";
+  display: block;
+  background-color: var(--nav-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+
+  bottom: 0;
+
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .header-nav .item {
   margin-right: 50px;
@@ -122,6 +139,10 @@ ul {
 }
 .header-nav .hover-item {
   color: var(--nav-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-contacts .hover-item {
   color: var(--nav-color);
@@ -129,10 +150,6 @@ ul {
 .header-nav .link:hover,
 .header-nav .link:focus {
   color: var(--nav-color);
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-contacts .link:hover,
 .header-nav-contacts .link:focus {
@@ -144,60 +161,44 @@ ul {
 }
 .header-nav .hover-item:hover,
 .header-nav .hover-item:focus {
-  color: var(--primary-color);
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--nav-color);
 }
 .header-nav-contacts .hover-item:hover,
 .header-nav-contacts .hover-item:focus {
-  color: var(--no-primary-color);
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--nav-color);
 }
 .letter-icon {
   width: 16px;
   height: 12px;
-  fill: var(--no-primary-color);
+  fill: var(--nav-color);
   margin-right: 10px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .telephone-icon {
   width: 10px;
   height: 16px;
   fill: var(--no-primary-color);
   margin-right: 10px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-contacts .link:hover .letter-icon {
   fill: var(--nav-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-contacts .link:focus .letter-icon {
   fill: var(--nav-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-contacts .link:hover .telephone-icon {
   fill: var(--nav-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav-contacts .link:focus .telephone-icon {
   fill: var(--nav-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Секция картинок */
 .section-img {
@@ -234,6 +235,10 @@ ul {
   border-radius: 4px;
   border: solid 1px;
   border-color: #f5f4fa;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-button:hover,
 .section-button:focus {
@@ -241,10 +246,6 @@ ul {
   background-color: var(--nav-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list {
   list-style: none;
@@ -260,15 +261,15 @@ ul {
 .list-img .link {
   display: block;
   width: 100%;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-img .link:hover,
 .list-img .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-img:nth-child(3n + 1) {
   margin-left: 0px;
@@ -367,6 +368,10 @@ ul {
 
   text-decoration: none;
   color: var(--no-primary-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list .item {
   margin-top: 9px;
@@ -381,9 +386,6 @@ ul {
 .footer-list .link:hover,
 .footer-list .link:focus {
   color: var(--nav-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-h3-svg {
   color: var(--white);
@@ -408,6 +410,10 @@ ul {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-div-svg {
   margin-left: 70px;
@@ -421,8 +427,4 @@ ul {
 .footer-list-svg:hover,
 .footer-list-svg:focus {
   background-color: var(--nav-color);
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
